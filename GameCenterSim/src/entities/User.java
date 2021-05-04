@@ -1,31 +1,33 @@
 package entities;
 
-
-
 import abstracts.Entity;
 
-public class Customer implements Entity {
+public class User implements Entity {
 
 	private int id;
-	private String firstName;
-	private String lastName;
-    private int timeOfBirth;
-	private String nationalityId;
-
 	
-	public Customer() {
+	private String firstName;
+	
+	private String lastName;
+
+    private int timeOfBirth;
+	
+	private String nationalityId;
+	
+	public User () {
 		
 	}
 	
-	
-	public Customer(int id, String firstName, String lastName, int timeOfBirth, String nationalityId) {
+	public User(int id, String firstName, String lastName, int timeOfBirth, String nationalityId) {
+		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.timeOfBirth = timeOfBirth;
 		this.nationalityId = nationalityId;
 	}
-	
+
+
 	
 	
 	public int getId() {
@@ -51,7 +53,8 @@ public class Customer implements Entity {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
+	
+	
 	public int getTimeOfBirth() {
 		return timeOfBirth;
 	}
@@ -67,5 +70,6 @@ public class Customer implements Entity {
 	public void setNationalityId(String nationalityId) {
 		this.nationalityId = nationalityId;
 	}
-	
-	}
+
+
+}
