@@ -1,6 +1,7 @@
 package adapters;
 
 import java.rmi.RemoteException;
+import java.util.Locale;
 
 import abstracts.CustomerCheckService;
 import entities.Customer;
@@ -14,12 +15,9 @@ public class MernisServiceAdapter implements CustomerCheckService {
 
 		KPSPublicSoapProxy client = new KPSPublicSoapProxy();
         boolean result=true;
-        System.out.println(customer.getFirstName().toUpperCase() + " "+
-				customer.getLastName().toUpperCase()+ " " + customer.getTimeOfBirth());
-        
 		try {		
-			result = client.TCKimlikNoDogrula(Long.parseLong(customer.getNationalityId()),customer.getFirstName(),
-				customer.getLastName(),customer.getTimeOfBirth());
+			result = client.TCKimlikNoDogrula(Long.parseLong(customer.getNationalityId()),customer.getFirstName().toUpperCase(new Locale("tr")),
+				customer.getLastName().toUpperCase(new Locale("tr")),customer.getTimeOfBirth());
 		}catch (RemoteException e) {
 		
 			e.printStackTrace();

@@ -15,6 +15,7 @@ public class Customer implements Entity {
 	
 	public Customer() {
 		
+		
 	}
 	
 	

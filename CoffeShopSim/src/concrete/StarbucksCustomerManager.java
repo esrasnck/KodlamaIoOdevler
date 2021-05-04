@@ -12,6 +12,7 @@ public class StarbucksCustomerManager extends BaseCustomerManager {
 	public StarbucksCustomerManager(CustomerCheckService customerCheckService) {
 
 		this.customerCheckService = customerCheckService;
+		
 	}
 
 
