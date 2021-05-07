@@ -69,10 +69,10 @@ public class AuthManager implements AuthService {
 		if(user1.getVerificationCode()== code) {
 			user1.setActive(true);
 			
-			System.out.println("Kod dogrulandı. ");
+			System.out.println("Verified ");
 			return;
 		}
-		System.out.println("Dogrulama kodu hatali.");
+		System.out.println("verification code is invalid");
 		
 	
 	}
@@ -95,7 +95,7 @@ public class AuthManager implements AuthService {
 	     this.userService.add(user);
 	     user.setActive(true);
 		}
-		System.out.println("giris Yapildi. tesekkurler Umut :) ");
+		System.out.println("logged in. thank you Umut :) ");
 
 	}
 

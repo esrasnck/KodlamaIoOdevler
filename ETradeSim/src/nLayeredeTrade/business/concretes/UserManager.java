@@ -17,7 +17,7 @@ public class UserManager implements UserService {
 	public void add(User user) {   // kubramla test et
 		
 		if(!this.validationRules(user)) {
-			System.out.println("tekrar deneyin");
+			System.out.println("Try again");
 			return;
 			}
 		
@@ -35,7 +35,7 @@ public class UserManager implements UserService {
 	public void update(User user) {
 		
 		if(!this.validationRules(user)) {
-			System.out.println("tekrar deneyin");
+			System.out.println("Try again");
 			return;
 			}
 		
