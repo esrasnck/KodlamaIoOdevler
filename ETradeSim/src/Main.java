@@ -1,4 +1,5 @@
 
+import nLayeredeTrade.business.abstracts.AuthService;
 import nLayeredeTrade.business.concretes.AuthManager;
 import nLayeredeTrade.business.concretes.UserManager;
 import nLayeredeTrade.dataaccess.concretes.InMemoryUserDao;
@@ -11,7 +12,7 @@ public class Main {
     
 
 
-		AuthManager au = new AuthManager(new UserManager(new InMemoryUserDao()));
+		AuthService au = new AuthManager(new UserManager(new InMemoryUserDao()));
 		
 		User user1 = new User(6,"Esra","Sancak","esrasancak3@gmail.com","123132131");
 		au.register(user1);

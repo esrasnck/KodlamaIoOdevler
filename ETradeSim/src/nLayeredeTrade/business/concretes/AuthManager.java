@@ -65,7 +65,7 @@ public class AuthManager implements AuthService {
 	public void verify(User user, String code) {
 		
 		User user1 = this.userService.get(user.getId());
-		System.out.println(user1.getVerificationCode() + " " + user1.getId());
+		// System.out.println(user1.getVerificationCode() + " " + user1.getId());
 		if(user1.getVerificationCode()== code) {
 			user1.setActive(true);
 			
