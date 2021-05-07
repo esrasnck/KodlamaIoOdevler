@@ -42,19 +42,19 @@ public class InMemoryUserDao implements UserDao {
 	@Override
 	public void add(User user) {
 	   this.users.add(user);
-	   System.out.println("Kullanici eklendi 1 " + user.getFirstName() +" " +user.getId());
+	   System.out.println("User added !" + user.getFirstName() +" " +user.getId());
 	}
 
 	@Override
 	public void update(User user) {
 		
-      System.out.println("Kullanici güncellendi : /arastirilacak...");
+      System.out.println("User updated !");
 	}
 
 	@Override
 	public void delete(User user) {
 
-     System.out.println("Kullanici silindi : /arastirilacak");
+     System.out.println("User deleted !");
 		
 	}
 

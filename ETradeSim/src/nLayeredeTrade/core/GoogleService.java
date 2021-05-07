@@ -4,5 +4,5 @@ import nLayeredeTrade.entities.concretes.User;
 
 public interface GoogleService {
 
-	User loginWithGoogle();
+	User registerWithGoogle();
 }

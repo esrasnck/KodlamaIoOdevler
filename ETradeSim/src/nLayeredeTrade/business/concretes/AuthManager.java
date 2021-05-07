@@ -83,7 +83,7 @@ public class AuthManager implements AuthService {
 		
 		GoogleService gs = new GoogleMailManager();
 	   
-		User user = gs.loginWithGoogle();
+		User user = gs.registerWithGoogle();
 	    
 		if(this.userService.getByMail(user.getEmail())!=null) {
 		 

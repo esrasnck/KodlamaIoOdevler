@@ -14,7 +14,7 @@ public class GoogleMailManager implements GoogleService{
 	
 	
 	@Override
-	public User loginWithGoogle() {
+	public User registerWithGoogle() {
 		
        Gmail gmail = new Gmail();
        
