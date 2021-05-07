@@ -17,7 +17,7 @@ public class Main {
 		
 		BaseCustomerManager customerManager = new StarbucksCustomerManager(new MernisServiceAdapter());
 		
-	    customerManager.Save(new Customer(1,"LATiFE ESRA","SANCAK",1453,"**************"));
+	    customerManager.Save(new Customer(1,"LATiFE ESRA","SANCAK",1984,"23758191646"));
 
 		
 		

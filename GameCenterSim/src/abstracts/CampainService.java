@@ -7,13 +7,11 @@ import entities.Campain;
 
 public interface CampainService {
 
-   public void add(Campain campain);
+    public void add(Campain campain);
 	
     public	void update(Campain campain);
 	
 	public void delete(Campain campain);
 	
-	public boolean campainExist();
-
-
+	public boolean campainExist();  // yanlis
 }

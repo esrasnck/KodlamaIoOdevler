@@ -9,4 +9,5 @@ public interface SaleService {
 	public void sale(Game game, User user);
 	
 	public void saleWithCampain(Game game, Campain campain);
+	
 }
